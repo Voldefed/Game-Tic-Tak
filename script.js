@@ -15,7 +15,7 @@ function game(elems) {
       this.removeEventListener("click", step);
 
       if (isVictory(elems)) {
-        alert(this.textContent);
+        alert(`Переміг ${this.textContent}`);
         location.reload();
       } else if (i === 8) {
         alert("Ничія");
